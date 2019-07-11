@@ -1,1 +1,4 @@
 
+def my_print_method(return_42):
+  print(return_42)
+my_print_method("42")
