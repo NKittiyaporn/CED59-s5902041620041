@@ -1,4 +1,5 @@
 
-def my_print_method(return_42):
-  print(return_42)
-my_print_method("42")
+def return_42():
+  return (42)
+def my_method(a,b):
+  return(a*b)
