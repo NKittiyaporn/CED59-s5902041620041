@@ -1,1 +1,0 @@
-<b>Test action</b>
