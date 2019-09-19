@@ -1,0 +1,1 @@
+<b>Index action</b>
