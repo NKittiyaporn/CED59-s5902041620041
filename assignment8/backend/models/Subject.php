@@ -1,3 +1,17 @@
 <?php
 namespace backend\models;
-class Subject extends \common\models\Subject {}
+
+
+use yii\behaviors\TimestampBehavior;
+use yii\behaviors\BlameableBehavior;
+class Subject extends \common\models\Subject 
+{
+    public function behaviors()
+    {
+        return [
+            TimestampBehavior::class,
+            BlameableBehavior::class
+        ];
+    }
+}
+?>

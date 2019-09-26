@@ -10,6 +10,10 @@ use Yii;
  * @property int $id
  * @property string $name
  * @property string $detail
+ * @property int $created_at
+ * @property int $created_by
+ * @property int $updated_at
+ * @property int $updated_by
  */
 class Subject extends \yii\db\ActiveRecord
 {
@@ -29,6 +33,7 @@ class Subject extends \yii\db\ActiveRecord
         return [
             [['name'], 'required'],
             [['detail'], 'string'],
+            [['created_at', 'created_by', 'updated_at', 'updated_by'], 'integer'],
             [['name'], 'string', 'max' => 256],
         ];
     }
@@ -42,6 +47,10 @@ class Subject extends \yii\db\ActiveRecord
             'id' => 'ID',
             'name' => 'Name',
             'detail' => 'Detail',
+            'created_at' => 'Created At',
+            'created_by' => 'Created By',
+            'updated_at' => 'Updated At',
+            'updated_by' => 'Updated By',
         ];
     }
 }
